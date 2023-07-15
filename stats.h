@@ -1,4 +1,6 @@
 
+// define the Stats structure here. See the tests to infer its properties
+
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();

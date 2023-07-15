@@ -8,9 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: setup cmake
+      run: sudo apt install cmake
+
     - name: build
-      run: g++ -Wall -Wextra -o testchecker *.c*
+      run: |
+        cmake -S . -B build
+        cmake --build build
       
     - name: run
-      run: ./testchecker
+      run: build/stats_test

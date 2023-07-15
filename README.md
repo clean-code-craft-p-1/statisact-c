@@ -3,7 +3,7 @@
 Here we compute statistics for a bunch of numbers.
 
 This project uses the
-[catch framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md#top)
+[gtest framework](http://google.github.io/googletest/reference/assertions.html)
 to test functionality.
 The tests are defined in C++, while the code is in C.
 
