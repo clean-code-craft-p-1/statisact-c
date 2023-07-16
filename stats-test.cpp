@@ -23,6 +23,9 @@ TEST(Stats, AverageNaNForEmpty) {
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
 }
 
+int emailAlertCallCount = 0;
+int ledAlertCallCount = 0;
+
 TEST(Alert, AlertsWhenMaxExceeds) {
     // create additional .c and .h files
     // containing functions called emailAlerter, ledAlerter
